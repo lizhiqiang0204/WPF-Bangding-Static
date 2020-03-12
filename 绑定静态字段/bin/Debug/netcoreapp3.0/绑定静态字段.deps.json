@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "绑定静态字段/1.0.0": {
+        "runtime": {
+          "绑定静态字段.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "绑定静态字段/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

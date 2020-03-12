@@ -1,0 +1,18 @@
+﻿<Window x:Class="绑定静态字段.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:绑定静态字段"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="400">
+    <Grid>
+        <Grid.DataContext><!--该Grid所有绑定都是绑定到ClassA里面的属性-->
+            <local:ClassA/>
+        </Grid.DataContext>
+        <StackPanel>
+            <Label Content="{Binding myLabel}"/> <!--绑定到ClassA里面myLabel字符串属性-->
+            <Button Content="ButtonA" Click="ButtonA_Click" /> <!--在MainWindow.xaml.cs后台文件中执行按键单击事件，单击事件就是改变ClassA中的myLabel属性同时在界面上显示出更改的信息-->
+        </StackPanel>
+    </Grid>
+</Window>
